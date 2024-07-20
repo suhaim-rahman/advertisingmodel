@@ -1,52 +1,20 @@
-# Credit Card Fraud Detection
+# Advertising Impact on Sales Analysis
 
-This project builds a machine learning model to identify fraudulent credit card transactions using the Credit Card Fraud Detection dataset from Kaggle.
+## Overview
+
+This project analyzes the impact of different advertising mediums—TV, Radio, and Newspaper—on sales using a Linear Regression model. By examining how expenditures in these areas correlate with sales figures, the goal is to provide actionable insights for optimizing advertising strategies.
 
 ## Dataset
 
-The dataset used in this project is the [Credit Card Fraud Detection](https://www.kaggle.com/mlg-ulb/creditcardfraud) dataset from Kaggle.
+The dataset used for this analysis is `advertising.csv`, which includes the following columns:
+- `TV`: Advertising budget spent on TV (in thousands of dollars)
+- `Radio`: Advertising budget spent on Radio (in thousands of dollars)
+- `Newspaper`: Advertising budget spent on Newspapers (in thousands of dollars)
+- `Sales`: Sales figures (in thousands of units)
 
-## Project Overview
+## Installation
 
-This project aims to:
-1. Preprocess and normalize transaction data
-2. Handle class imbalance issues
-3. Train classification algorithms (Logistic Regression and Random Forest)
-4. Evaluate model performance using precision, recall, and F1-score
+To get started, you'll need Python and the necessary libraries. You can install the required libraries using `pip`:
 
-## Code Structure
-
-The main script `credit_card_fraud_detection.py` performs the following steps:
-1. Data loading and initial exploration
-2. Data preprocessing and normalization
-3. Handling class imbalance using SMOTE
-4. Model training (Logistic Regression and Random Forest)
-5. Model evaluation
-6. Feature importance analysis
-
-## Requirements
-
-- Python 3.x
-- pandas
-- numpy
-- scikit-learn
-- imbalanced-learn
-
-## Usage
-
-1. Download the dataset from Kaggle and place it in the project directory.
-2. Run the script:
-
-## Results
-
-(Include a summary of your results here, such as model performance metrics and top important features)
-
-## Future Improvements
-
-- Experiment with other classification algorithms
-- Fine-tune model hyperparameters
-- Explore more advanced feature engineering techniques
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
+```bash
+pip install pandas numpy scikit-learn matplotlib
